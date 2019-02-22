@@ -1,17 +1,22 @@
-import Vue from 'vue/dist/vue.js'
 import VueRouter from 'vue-router'
+import VueAxios from 'vue-axios'
+import Axios from 'axios'
+
+import Vue from 'vue/dist/vue.js'
 import './cube-ui'
+
 import App from './App.vue'
-import Goods from './components/Goods'
-import Ratings from './components/Ratings'
-import Seller from './components/Seller'
+import Goods from 'components/goods/Goods'
+import Ratings from 'components/ratings/Ratings'
+import Seller from 'components/seller/Seller'
+
+import 'common/styles/Styles.scss'
 
 Vue.config.productionTip = false
+Vue.use(VueAxios, Axios)
 Vue.use(VueRouter)
-Vue.extend({
-  template: App
-})
 
+let app = Vue.extend(App)
 let router = new VueRouter({
   routes: [{
     path: '/goods',
@@ -24,7 +29,7 @@ let router = new VueRouter({
     component: Seller
   }]
 })
-
 new Vue({
-  router
-}).$mount('#app')
+  router,
+  render: i => i(app)
+}).$mount('#entry')

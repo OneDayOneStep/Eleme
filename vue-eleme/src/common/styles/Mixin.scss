@@ -1,0 +1,61 @@
+@mixin icon($url, $width, $height){
+  display: inline-block;
+  width: $width;height: $height;
+  background-size: $width $height;
+  background-repeat: no-repeat;
+  background-image: url($url + "@2x.png");
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background-image: url($url + "@3x.png");
+  }
+}
+@mixin bg-image($url){
+  background-repeat: no-repeat;
+  background-image: url($url + "@2x.png");
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background-image: url($url + "@3x.png");
+  }
+}
+@mixin border-OnePx($color){
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;bottom: 0;
+    width: 100%;
+    border-top: $color 1px solid;
+  }
+}
+@mixin border-radius($radius: .1rem){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($shadow...){
+  box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+}
+@mixin box-sizing($box-sizing: border-box){
+  box-sizing: $box-sizing;
+  -o-box-sizing: $box-sizing;
+  -ms-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  -webkit-box-sizing: $box-sizing;
+}
+@mixin opacity($opacity){
+  filter:alpha(opacity = $opacity * 100);
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+}
+@mixin transition($transition, $s){
+  transition: $transition $s;
+  -moz-transition: $transition $s;
+  -webkit-transition: $transition $s;
+  -o-transition: $transition $s;
+}
