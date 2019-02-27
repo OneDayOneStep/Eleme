@@ -7,18 +7,21 @@
       <router-link tag='div' to='seller'  class='tab'>商家</router-link>
     </div>
     <router-view />
+    <appFooter />
   </div>
 </template>
 
 <script>
 import appHeader from 'components/header/Header'
+import appFooter from 'components/footer/Footer'
 
-const ERR_OR = 0
+const ERR_OK = 0
 
 export default {
   name: 'app',
   components: {
-    appHeader
+    appHeader,
+    appFooter
   },
   data () {
     return {
@@ -26,10 +29,9 @@ export default {
     }
   },
   created () {
-    this.axios.get('/api/seller').then((result) => {
-      if (result.data.errno === ERR_OR) {
+    this.axios.get('/api/data').then((result) => {
+      if (result.data.errno === ERR_OK) {
         this.seller = result.data.data.seller
-        console.log(this.seller)
       }
     })
   },

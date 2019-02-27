@@ -26,7 +26,7 @@ module.exports = {
   },
   devServer: {
     before(app) {
-      app.get('/api/seller', (req, res) => {
+      app.get('/api/data', (req, res) => {
         res.json({
           errno: 0,
           data: Mock
