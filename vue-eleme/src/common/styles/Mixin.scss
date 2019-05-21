@@ -53,9 +53,15 @@
   -khtml-opacity: $opacity;
   opacity: $opacity;
 }
-@mixin transition($transition, $s){
-  transition: $transition $s;
-  -moz-transition: $transition $s;
-  -webkit-transition: $transition $s;
-  -o-transition: $transition $s;
+@mixin transition($transition...){
+  transition: $transition;
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+}
+@mixin transform($transform...){
+  transform: $transform;
+  -moz-transform: $transform;
+  -webkit-transform: $transform;
+  -o-transform: $transform;
 }

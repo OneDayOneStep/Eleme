@@ -6,14 +6,14 @@
       <router-link tag='div' to='ratings' class='tab'>评论</router-link>
       <router-link tag='div' to='seller'  class='tab'>商家</router-link>
     </div>
-    <router-view />
-    <appFooter />
+    <router-view :selectFoods="selectFoods" @changeFoods="changeFoods" />
+    <appFooter :min-price="seller.minPrice" :delivery-price="seller.deliveryPrice" :countFoods="selectFoods"/>
   </div>
 </template>
 
 <script>
 import appHeader from 'components/header/Header'
-import appFooter from 'components/footer/Footer'
+import appFooter from 'components/shopcart/Shopcart'
 
 const ERR_OK = 0
 
@@ -25,7 +25,13 @@ export default {
   },
   data () {
     return {
-      seller: {}
+      seller: {},
+      selectFoods: []
+    }
+  },
+  methods: {
+    changeFoods (Foods) {
+      this.selectFoods = Foods
     }
   },
   created () {

@@ -2,16 +2,16 @@
   <div class="goods">
     <div class="menu-wrapper" ref="mwrapper">
       <div>
-        <div v-for="(m, index) of this.goods"
+        <div v-for="(m, index) of this.selectFoods"
              :key="'menus_'+ index"
              :class="{'menus': true,'choosing': choosing === index}"
-             @click="choose(index)"
+             @click="choose(index, $event)"
         >{{ m.name }}</div>
       </div>
     </div>
     <div class="foods-wrapper" ref="fwrapper">
       <ul class="good-list">
-        <li class="list-good" v-for="(good, g_index) of this.goods" :key="'good_' + g_index" ref="goods">
+        <li class="list-good" v-for="(good, g_index) of this.selectFoods" :key="'good_' + g_index" ref="goods">
           <h1 class="good-title">{{ good.name }}</h1>
           <ul class="food-list">
             <li class="list-food" v-for="(food, f_index) of good.foods" :key="'food_' + f_index">
@@ -26,9 +26,7 @@
                   <span class="current-price">{{ '￥'+ food.price }}</span>
                   <span class="old-price" v-if="food.oldPrice !== ''">{{ '￥'+ food.oldPrice }}</span>
                   <div class="choose-food">
-                    <span class="reduce-food icon-remove_circle_outline"></span>
-                    <span class="food-number"></span>
-                    <span class="add-food icon-add_circle"></span>
+                    <CartControl :food="food" />
                   </div>
                 </div>
               </div>
@@ -42,6 +40,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import CartControl from '../cartcontrol/CartControl'
 const ERR_OK = 0
 export default {
   name: 'goods',
@@ -52,6 +51,20 @@ export default {
       scrollTops: [],
       nowTop: 0
     }
+  },
+  props: {
+    selectFoods: Array
+  },
+  methods: {
+    choose (index, event) {
+      if (!event._constructed) { // better-scroll 派发的事件才会有 _constructed
+        return
+      }
+      this.FScroll.scrollToElement(this.$refs['goods'][index], 300)
+    }
+  },
+  components: {
+    CartControl
   },
   computed: {
     choosing () {
@@ -66,16 +79,11 @@ export default {
       return 0
     }
   },
-  methods: {
-    choose (index) {
-      this.FScroll.scrollToElement(this.$refs['goods'][index], 300)
-    }
-  },
   created () {
     this.axios.get('/api/data').then((result) => {
       if (result.data.errno === ERR_OK) {
         this.seller = result.data.data.seller
-        this.goods = result.data.data.goods
+        this.$emit('changeFoods', result.data.data.goods)
         this.$nextTick(() => {
           let totalHeight = 0
           this.scrollTops.push(totalHeight)
@@ -98,7 +106,6 @@ export default {
             this.nowTop = xy.y
           })
         })
-        console.log(this.goods)
       }
     })
   }
@@ -109,7 +116,7 @@ export default {
   .goods{
     display: flex;
     position: absolute;
-    top: 176px;bottom:46px;
+    top: 176px;bottom:45px;
     width:100%;overflow: hidden;
     .menu-wrapper{
       flex: 0 0 80px;
@@ -204,12 +211,6 @@ export default {
                 }
                 .choose-food{
                   position: absolute;bottom: -6px;right: 0px;
-                  .food-number{
-                    width: 24px;text-align: center;display: inline-block;
-                  }
-                  .add-food,.reduce-food{
-                    font-size:26px;color:#58a9fa;
-                  }
                 }
               }
             }
