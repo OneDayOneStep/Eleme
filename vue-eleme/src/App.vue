@@ -15,7 +15,7 @@
 import appHeader from 'components/header/Header'
 import appFooter from 'components/shopcart/Shopcart'
 
-const ERR_OK = 0
+const ERR_OK = 0;
 
 export default {
   name: 'app',
