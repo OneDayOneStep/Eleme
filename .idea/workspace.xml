@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/vue-eleme/src/components/header/Header.vue" line="152" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c723c5d9-878c-4305-82bd-75978edc2d67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -70,6 +67,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/shopcart/Shopcart.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -77,15 +75,37 @@
               <folding>
                 <element signature="e#1962#2014#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/vue-eleme/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/Mixin.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
               <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+=======
+        <entry file="file://$PROJECT_DIR$/vue-eleme/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-eleme/67.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
             </state>
           </provider>
         </entry>
@@ -98,6 +118,7 @@
         <option value="CSS File" />
         <option value="SCSS File" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -158,9 +179,16 @@
         <option value="$PROJECT_DIR$/vue-eleme/README.md" />
         <option value="$PROJECT_DIR$/vue-eleme/src/components/goods/Goods.vue" />
         <option value="$PROJECT_DIR$/vue-eleme/src/components/cartcontrol/CartControl.vue" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/../新建用 - 副本.html" />
         <option value="$PROJECT_DIR$/vue-eleme/src/App.vue" />
         <option value="$PROJECT_DIR$/vue-eleme/src/components/shopcart/Shopcart.vue" />
+=======
+        <option value="$PROJECT_DIR$/vue-eleme/src/components/shopcart/Shopcart.vue" />
+        <option value="$PROJECT_DIR$/vue-eleme/README.md" />
+        <option value="$PROJECT_DIR$/vue-eleme/67.html" />
+        <option value="$PROJECT_DIR$/vue-eleme/src/App.vue" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
       </list>
     </option>
   </component>
@@ -182,13 +210,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="Eleme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eleme" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Eleme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eleme" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="vue-eleme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-eleme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eleme" type="b2602c69:ProjectViewProjectNode" />
@@ -238,6 +272,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Mix&#9;FILE&#9;file://C:/EveryThing/InDex/Mine/Eleme/vue-eleme/src/common/styles/Mixin.scss&#10;reset&#9;FILE&#9;file://C:/EveryThing/InDex/Mine/Eleme/vue-eleme/src/common/styles/Reset.css" />
@@ -245,7 +280,8 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Project/N_Hns/n3pa-hns/n3pa-hns.web/src/main/webapp" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -302,13 +338,23 @@
       <workItem from="1554861246641" duration="56000" />
       <workItem from="1557113029420" duration="22000" />
       <workItem from="1557734850893" duration="4716000" />
+<<<<<<< HEAD
       <workItem from="1558426475984" duration="6115000" />
       <workItem from="1558664905651" duration="19213000" />
+=======
+      <workItem from="1558426475984" duration="741000" />
+      <workItem from="1558449827278" duration="515000" />
+      <workItem from="1558450358938" duration="310000" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="155060000" />
+=======
+    <option name="totallyTimeSpent" value="131298000" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,9 +366,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49307957" visible="true" weight="0.19264892" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49307957" visible="true" weight="0.13863996" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5069204" side_tool="true" weight="0.19264892" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -333,9 +386,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3282123" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.48225603" visible="true" weight="0.2849162" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.517744" side_tool="true" weight="0.23545332" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32872927" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4818134" weight="0.3026906" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5181866" side_tool="true" weight="0.3026906" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -345,6 +404,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/sassReset.scss" />
     <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/bulletin@2x.png">
       <provider selected="true" editor-type-id="images" />
@@ -458,11 +518,70 @@
           <folding>
             <element signature="e#158#688#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/vue-eleme/.eslintrc.js" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/node_modules/webpack/bin/webpack.js" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/ratings/Ratings.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/sassReset.scss" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/Styles.scss" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/Base.scss" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/bulletin@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/header/images/bulletin@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/star24_on@3x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/star48_half@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/star48_off@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/Reset.css" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/fonts/icomoon.svg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/inconFont.scss" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/img/star36_half@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/components/images/star24_off@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/components/images/star24_half@3x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/header/images/special_1@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/components/images/star24_on@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/components/images/star24_half@2x.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/components/Star.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/外卖05_评价页.jpg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/footer/Footer.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/外卖01_商品页.jpg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/外卖02_商品页_公告及优惠信息.jpg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/外卖04_商品页面_商品详情.jpg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖04_商品页面_商品详情_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖05_评价页_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/public/index.html" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖06_商家页_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/外卖03_商品页_购物车详情.jpg" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖01_商品页_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖02_商品页_公告及优惠信息_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/resource/标注/外卖03_商品页_购物车详情_spec.png" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/common/styles/Mixin.scss" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/header/Header.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/data.json" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/vue.config.js" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/babel.config.js" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/theme.styl" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/seller/Seller.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/cube-ui.js" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/goods/Goods.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/cartcontrol/CartControl.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/src/components/shopcart/Shopcart.vue" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/README.md" />
+    <entry file="file://$PROJECT_DIR$/vue-eleme/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-eleme/67.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-eleme/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="48">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
@@ -553,11 +672,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+=======
+        <state relative-caret-position="-8">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-eleme/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="312">
           <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
@@ -594,8 +718,27 @@
           <folding>
             <element signature="e#1962#2014#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="408">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+>>>>>>> aa607b0a54ce97bb4d417e8e1a077f3f55cf9958
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
