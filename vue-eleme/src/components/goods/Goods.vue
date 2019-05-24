@@ -26,7 +26,7 @@
                   <span class="current-price">{{ '￥'+ food.price }}</span>
                   <span class="old-price" v-if="food.oldPrice !== ''">{{ '￥'+ food.oldPrice }}</span>
                   <div class="choose-food">
-                    <CartControl :food="food" />
+                    <CartControl :food="food" @cartAdded="cartAdded" />
                   </div>
                 </div>
               </div>
@@ -61,6 +61,9 @@ export default {
         return
       }
       this.FScroll.scrollToElement(this.$refs['goods'][index], 300)
+    },
+    cartAdded (target) {
+      this.$emit('cartAdded', target)
     }
   },
   components: {

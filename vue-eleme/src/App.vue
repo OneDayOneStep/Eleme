@@ -6,8 +6,8 @@
       <router-link tag='div' to='ratings' class='tab'>评论</router-link>
       <router-link tag='div' to='seller'  class='tab'>商家</router-link>
     </div>
-    <router-view :selectFoods="selectFoods" @changeFoods="changeFoods" />
-    <appFooter :min-price="seller.minPrice" :delivery-price="seller.deliveryPrice" :countFoods="selectFoods"/>
+    <router-view :selectFoods="selectFoods" @changeFoods="changeFoods" @cartAdded="cartAdded"/>
+    <appFooter ref="Shopcart" :min-price="seller.minPrice" :delivery-price="seller.deliveryPrice" :countFoods="selectFoods"/>
   </div>
 </template>
 
@@ -32,6 +32,9 @@ export default {
   methods: {
     changeFoods (Foods) {
       this.selectFoods = Foods
+    },
+    cartAdded (target) {
+      this.$refs.Shopcart.dropBall(target)
     }
   },
   created () {

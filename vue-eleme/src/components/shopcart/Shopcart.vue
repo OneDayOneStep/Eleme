@@ -31,6 +31,13 @@
           <span class="icon-shopping_cart"></span>
           <span class="icon-totalFoods" v-show="totalPrice.CountFoods > 0">{{ totalPrice.CountFoods }}</span>
         </div>
+        <div v-for="(Ball, index) of Balls" :key="'Ball_' + index">
+          <transition @before-enter="beforeDrop" @enter="dropping" @after-enter="afterDrop">
+            <div class="Ball" v-show="Ball.show">
+              <div class="inner innerHook"></div>
+            </div>
+          </transition>
+        </div>
       </div>
       <div class="currentMoney">￥{{ totalPrice.CountMoney }}元</div>
       <div class="tips">另需配送费￥{{ deliveryPrice }}元</div>
@@ -49,11 +56,25 @@ export default {
   data () {
     return {
       Price: 0,
-      showingCartList: false
+      showingCartList: false,
+      Balls: [{
+        show: false
+      }, {
+        show: false
+      }, {
+        show: false
+      }, {
+        show: false
+      }, {
+        show: false
+      }]
     }
   },
   components: {
     CartControl
+  },
+  created () {
+    this.droppingBall = []
   },
   methods: {
     showCartList () {
@@ -70,6 +91,45 @@ export default {
           })
         }
       })
+    },
+    dropBall (target) { // 点击添加按钮时, target从其他组件传递并由父组件触发该事件
+      for (let i = 0; i < this.Balls.length; i++) {
+        let Ball = this.Balls[i]
+        if (!Ball.show) {
+          Ball.show = true
+          Ball.el = target
+          this.droppingBall.push(Ball)
+          break
+        }
+      }
+    },
+    beforeDrop (el) { // v-show 触发动画开始前
+      let ball = this.droppingBall[this.droppingBall.length - 1] // 获取到 dropBall() 方法最新添加到 droppingBall 里的 Ball
+      let rect = ball.el.getBoundingClientRect() // 获取到点击添加商品时按钮的位置信息
+      let x = rect.left - 32 // 计算购物篮到位置信息的 x 轴
+      let y = -(window.innerHeight - rect.top - 35) // 计算购物篮到位置信息的 y 轴
+      el.style.display = 'block' // 显示小球容器
+      el.style.transform = el.style.webkitTransform = `translate3d(0, ${y}px, 0)` // 设置小球容器 Y 轴的起始位置 (在css3里做缓动效果)
+      el.style.opacity = '.5' // 设置小球容器在 Y 轴的位置 (在css3里做缓动效果)
+      let inner = el.getElementsByClassName('innerHook')[0] // 获取到小球容器里的小球
+      inner.style.transform = inner.style.webkitTransform = `translate3d(${x}px, 0, 0)` // 设置小球容器的小球在 X 轴的起始位置
+    },
+    dropping (el, done) { // 动画触发时
+      this._reflow = document.body.offsetHeight // 触发浏览器重绘
+      el.style.transform = el.style.webkitTransform = 'translate3d(0,0,0)' // 设置小球容器在 Y 轴的位置归位
+      el.style.opacity = '1'
+      let inner = el.getElementsByClassName('innerHook')[0]
+      inner.style.transform = inner.webkitTransform = 'translate3d(0,0,0)' // 设置小球容器的小球在 X 轴的位置归位
+      el.addEventListener('transitionend', () => {
+        done()
+      })
+    },
+    afterDrop (el) { // 动画结束后
+      let ball = this.droppingBall.shift()
+      if (ball) {
+        ball.show = false
+        el.style.display = 'none'
+      }
     }
   },
   mounted () {
@@ -141,6 +201,17 @@ export default {
       position:absolute;left:12px;
       bottom:2px;padding:6px;z-index:30;
       @include box-sizing;
+      .Ball{
+        position:fixed;
+        left:32px;bottom:22px;
+        @include transition(all .5s cubic-bezier(0.49, -0.29, 0.75, 0.41));
+        .inner{
+          height:16px;width:16px;background:#009FE3;
+          @include box-shadow(0, 0, 2px, #000);
+          @include border-radius(50%);
+          @include transition(all .5s);
+        }
+      }
       .shopIcon{
         background:#2B343C;
         height: 44px;width: 44px;
